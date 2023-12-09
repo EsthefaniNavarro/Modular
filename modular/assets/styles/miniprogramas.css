@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    float: left;
+}
+
+header aside {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 40px); /* Tamaño total de la ventana menos la altura del encabezado */
+}
+
+.navigation-section {
+    width: 200px;
+    background: linear-gradient(to right, #66a3ff, #3385ff); /* Tonos azules claros y fuertes */
+    padding: 20px;
+}
+
+.navigation-section ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #fff; /* Texto en color blanco */
+}
+
+.navigation-section li {
+    margin-bottom: 2em; /* Espaciado entre secciones */
+}
+
+.navigation-section a {
+    text-decoration: none; /* Subrayado punteado */
+    color:#333; /* Texto en color blanco */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+}
+
+.navigation-section a:hover {
+    color: red; /* Texto en color rojo al pasar el mouse */
+}
+
+.navigation-section .nav-button {
+    display: block;
+    margin-bottom: 10px; /* Espaciado entre botones */
+    width: 100%; /* Botones ocupan todo el ancho */
+    background-color: #66a3ff; /* Fondo azul claro */
+    border: 2px solid #3385ff; /* Borde azul fuerte */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Mayor espaciado interno */
+    color: #fff; /* Texto en color blanco */
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse */
+.navigation-section .nav-button:hover {
+    background-color: #3385ff;
+    border-color: #0056b3;
+}
+
+/* Estilo para el botón deshabilitado */
+.navigation-section a[disabled] {
+    color: #ccc; /* Texto en color gris para indicar deshabilitado */
+    cursor: not-allowed; /* Cambia el cursor a indicar no permitido */
+}

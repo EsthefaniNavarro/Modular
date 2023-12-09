@@ -53,9 +53,10 @@ body{
     cursor: pointer;
 }
 
-.container button.hidden{
+.container2 .pestañas{
     background-color: #8FB7EF;
     border-color: rgb(0, 6, 68);
+    border-radius: 30px;
 }
 
 .container form{
@@ -118,4 +119,9 @@ body{
 
 img{
     width: 100%;
+}
+
+.pestañas{
+    background-color: #8FB7EF;
+    border-color: rgb(0, 6, 68);
 }
