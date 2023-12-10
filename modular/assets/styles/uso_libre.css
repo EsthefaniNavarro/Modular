@@ -7,7 +7,7 @@ header {
     background-color: #D8E8FF;
     color: black;
     text-align: left;
-    padding: 10px;
+    padding: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,6 +20,10 @@ header div {
 header aside {
     flex-grow: 1;
     text-align: center;
+}
+header img {
+    width: 40px; /* Ajusta según sea necesario */
+    margin-right: 20px; /* Espaciado entre la imagen y el texto */
 }
 
 .container {

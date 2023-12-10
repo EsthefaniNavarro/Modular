@@ -21,7 +21,10 @@ header aside {
     flex-grow: 1;
     text-align: center;
 }
-
+header img {
+    width: 40px; /* Ajusta según sea necesario */
+    margin-right: 20px; /* Espaciado entre la imagen y el texto */
+}
 .container {
     display: flex;
     height: calc(100vh - 40px); /* Tamaño total de la ventana menos la altura del encabezado */
