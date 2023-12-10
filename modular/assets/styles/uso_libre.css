@@ -4,8 +4,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #D8E8FF;
+    color: black;
     text-align: left;
     padding: 10px;
     display: flex;
@@ -107,4 +107,13 @@ header aside {
     font-size: 5em;
     padding: 10px;
     margin: 5px;
+}
+footer {
+    background-color: #BFEAF5;
+    color: black;
+    text-align: center;
+    padding: 2px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
