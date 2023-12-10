@@ -10,7 +10,7 @@
 <body>
     <header>
         <div>
-            <h1>
+            <h1 onclick="toggleNavigation()">
                 <img src="assets/img/logobot.webp" alt="Logo" /> 
                 P<span style="color: rgb(7, 154, 208);">y</span>-bot
             </h1>
@@ -46,6 +46,12 @@
             </div>
         </div>
     </section>
+    <script>
+        function toggleNavigation() {
+            var navigationSection = document.querySelector('.navigation-section');
+            navigationSection.style.display = (navigationSection.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
 </body>
 <footer>
     <p>Py-Kids Innovations. Copyright © 2023 All rights reserved.</p>

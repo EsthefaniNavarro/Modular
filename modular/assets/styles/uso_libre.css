@@ -35,6 +35,8 @@ header img {
     width: 200px;
     background: linear-gradient(to right, #66a3ff, #3385ff); /* Tonos azules claros y fuertes */
     padding: 20px;
+    text-align: center;
+    display: none; /* Oculta la barra de navegación por defecto */
 }
 
 .navigation-section ul {
@@ -121,3 +123,8 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+
+
+
+
