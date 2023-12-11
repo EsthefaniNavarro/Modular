@@ -25,3 +25,18 @@ window.addEventListener("resize", function(){
         side_menu.classList.add("navigation-section_move");
     }
 });
+
+////conectarme
+function toggleCheckbox(checkbox) {
+    checkbox.classList.toggle('checked');
+}
+
+function conectar() {
+    const aceptoCheckbox = document.querySelector('.checkbox');
+    if (aceptoCheckbox.classList.contains('checked')) {
+        // Realiza la conexión aquí
+        window.location.href = 'uso_libre.html';
+    } else {
+        alert('Por favor, acepta los términos y condiciones.');
+    }
+}

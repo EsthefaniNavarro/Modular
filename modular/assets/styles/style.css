@@ -134,3 +134,30 @@ img{
     background-color: #8FB7EF;
     border-color: rgb(0, 6, 68);
 }
+
+.acepto-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox.checked {
+    background-color: green;
+    border-color: green;
+}
+
+.checkbox i {
+    color: white;
+}
+

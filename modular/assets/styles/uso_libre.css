@@ -179,7 +179,7 @@ a.selected{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-   /* margin-left: 1200px;*/ 
+    margin-left: 1200px; 
 }
 
 

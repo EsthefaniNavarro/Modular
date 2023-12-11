@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/img/logobot.webp">
     <link rel="stylesheet" href="assets/styles/style.css">
     <title>Pybot</title>
 
@@ -30,13 +31,15 @@
         <div class="container2">
                 <div class="Inicio derecha">
                     <h1>¡Bienvenido a Pybot!</h1>
-                    <p>Acepto terminos y condiciones</p>
-                    <button class="pestañas" onclick="window.location.href='uso_libre.html'">Conectarme</button>
-                </div>
+                    <div class="acepto-container">
+                        <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                        <p>Acepto términos y condiciones</p>
+                    </div>
+                    <button class="pestañas" onclick="conectar()">Conectarme</button>
             </div>
         </div>
     </div>
-   
+    <script src="assets/script/script.js"></script>
 
 </body>
 
