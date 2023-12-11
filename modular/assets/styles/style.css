@@ -82,20 +82,29 @@ body{
     z-index: 2;
 }
 
-.social-icons{
-    margin: 20px 0;
+.buttons {
+  min-width: 350px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.social-icons a{
-    border: 1px solid #2a85e7;
-    border-radius: 20%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3px;
-    width: 40px;
-    height: 40px;
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #3679a0;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
 }
+
+.buttons a:hover {
+    transform: scale(1.2);
+  }
 
 .Inicio{
     position: absolute;
