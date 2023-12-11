@@ -5,33 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/modular/assets/styles/uso_libre.css">
     <link rel="stylesheet" href="assets/styles/uso_libre.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <title>Uso libre</title>
 </head>
-<body>
+<body id="body">
     <header>
-        <div>
-            <h1 onclick="toggleNavigation()">
-                <img src="assets/img/logobot.webp" alt="Logo" /> 
-                P<span style="color: rgb(7, 154, 208);">y</span>-bot
-            </h1>
+        <div class="icon__menu">
+            <img src="assets/img/logobot.webp" alt="Logo" id="btn_open"/>  
         </div>
         <aside><h1>Uso libre</h1></aside>
     </header>
-    <section class="container">
-        <!-- Secciones de navegación en el lado izquierdo -->
-        <div class="navigation-section">
-            <ul>
-                <li>
-                    <a class="uso-libre" href="#" disabled>Uso libre</a>
-                </li>
-                <li>
-                    <a class="conectividad" href="conectividad.html">Conectividad</a>
-                </li>
-                <li>
-                    <a class="mini-programas" href="mini_programas.html">Mini Programas</a>
-                </li>
-            </ul>
+     <!-- Secciones de navegación en el lado izquierdo -->
+    <div class="navigation-section" id="navigation-section">
+        <div class="pybot__page">   
+            <h4>Py-bot</h4>
         </div>
+        <div class="opciones">	
+            
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-unlock-alt" title="Uso libre"></i>
+                    <h4>Uso libre</h4>
+                </div>
+            </a>
+
+            <a href="conectividad.html">
+                <div class="option">
+                    <i class="fas fa-wifi" title="Conectividad"></i>
+                    <h4>Conectividad</h4>
+                </div>
+            </a>
+            <a href="mini_programas.html">
+                <div class="option">
+                    <i class="far fa-code" title="Mini Programas"></i>
+                    <h4>Mini Programas</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
         <!-- Cuadro grande con botones de flechas en el lado derecho -->
         <div class="caja">
             <div class="up-arrow-box">
@@ -46,12 +60,7 @@
             </div>
         </div>
     </section>
-    <script>
-        function toggleNavigation() {
-            var navigationSection = document.querySelector('.navigation-section');
-            navigationSection.style.display = (navigationSection.style.display === 'block') ? 'none' : 'block';
-        }
-    </script>
+    <script src="assets/script/script.js"></script>
 </body>
 <footer>
     <p>Py-Kids Innovations. Copyright © 2023 All rights reserved.</p>
