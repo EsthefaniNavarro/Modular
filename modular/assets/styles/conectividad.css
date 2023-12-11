@@ -74,6 +74,83 @@ main{
     transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
+.caja {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    max-height: 100%;
+}
+
+.pieza img{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 3.5em;
+}
+
+.pieza h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Ajuste de los botones de encender y apagar */
+.botones{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+/* Estilos para los botones de encender y apagar */
+.encender button,
+.apagar button {
+    padding: 10px 15px; /* Ajusta según sea necesario */
+    font-size: 16px; /* Ajusta según sea necesario */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    width: 98.5px;
+    height: 38px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+/* Estilos específicos para el botón de encender */
+.encender button {
+    background-color: green;
+    color: white;
+}
+
+/* Estilos específicos para el botón de apagar */
+.apagar button {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Efecto de hover para ambos botones */
+.encender button:hover{
+    background-color: #4caf50; /* Verde más oscuro para encender */
+    color: white;
+    transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
+}
+.apagar button:hover {
+    background-color: #fd2c2c; /* Verde más oscuro para encender */
+    color: white;
+    transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
+}
+
+/* Efecto de "select" al poner el mouse encima (hover) */
+.encender button:active,
+.apagar button:active {
+    transform: scale(0.9); /* Ajusta el factor de escala según sea necesario */
+}
+
+
 /*Ocultar scroll*/
 .navigation-section::-webkit-scrollbar{
     display: none;

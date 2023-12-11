@@ -23,7 +23,7 @@ header{
     position: fixed;
     top: 0;
     z-index: 200;
-     justify-content: space-between;
+    justify-content: space-between;
 }
 header div {
     float: left;
@@ -45,10 +45,15 @@ header img {
     flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio */
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Centra los elementos verticalmente */
+    max-height: 100%;
 }
 
 .muestras:hover{
     cursor: pointer;
+}
+
+.muestras img:hover{
+    transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
 }
 
 .muestras img{
@@ -56,6 +61,8 @@ header img {
     height: 200px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 3.5em;
+    margin-bottom: 13px;
 }
 
 .muestras h2{
