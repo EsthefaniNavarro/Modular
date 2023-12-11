@@ -78,6 +78,10 @@ main{
 .navigation-section::-webkit-scrollbar{
     display: none;
 }
+.menu__side{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
 .pybot__page{
     padding: 20px 30px;
