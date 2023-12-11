@@ -5,43 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/modular/assets/styles/miniprogramas.css">
     <link rel="stylesheet" href="assets/styles/miniprogramas.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <title>Mini programas</title>
 </head>
-<body>
+<body id="body">
     <header>
-        <img src="assets/img/logobot.webp" alt="Logo" /> 
-        <div><h1>Py-bot</h1></div>
+        <div class="icon__menu">
+            <img src="assets/img/logobot.webp" alt="Logo" id="btn_open"/>  
+        </div>
         <aside><h1>Mini programas</h1></aside>
     </header>
-    <section class="container">
-        <!-- Secciones de navegación en el lado izquierdo -->
-        <div class="navigation-section">
-            <ul>
-                <li>
-                    <a class="uso-libre" href="uso_libre.html">Uso libre</a>
-                </li>
-                <li>
-                    <a class="conectividad" href="conectividad.html">Conectividad</a>
-                </li>
-                <li>
-                    <a class="mini-programas" href="#" disabled>Mini Programas</a>
-                </li>
-            </ul>
+     <!-- Secciones de navegación en el lado izquierdo -->
+    <div class="navigation-section" id="navigation-section">
+        <div class="pybot__page">   
+            <h4>Py-bot</h4>
         </div>
+        <div class="opciones">	
+            
+            <a href="uso_libre.html">
+                <div class="option">
+                    <i class="fas fa-unlock-alt" title="Uso libre"></i>
+                    <h4>Uso libre</h4>
+                </div>
+            </a>
+
+            <a href="conectividad.html">
+                <div class="option">
+                    <i class="fas fa-wifi" title="Conectividad"></i>
+                    <h4>Conectividad</h4>
+                </div>
+            </a>
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="far fa-code" title="Mini Programas"></i>
+                    <h4>Mini Programas</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
         <div class="caja">
             <div class="muestras">
-                <img src="/modular/assets/img/obstaculo.png" alt="img">
+                <img src="assets/img/obstaculo.png" alt="img">
                 <h2>Esquivar obstaculos</h2>
             </div>
             <div class="muestras">
-                <img src="/modular/assets/img/seguir_camino.png" alt="">
+                <img src="assets/img/seguir_camino.png" alt="">
                 <h2>Seguir líneas</h2>
             </div>
             <div class="muestras">
-                <img src="/modular/assets/img/parar.png" alt="">
+                <img src="assets/img/parar.png" alt="">
                 <h2>Avanza y para</h2>
             </div>
         </div>
     </section>
+    <script src="assets/script/script.js"></script>
 </body>
+<footer>
+    <p>Py-Kids Innovations. Copyright © 2023 All rights reserved.</p>
+</footer>
 </html>
