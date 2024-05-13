@@ -7,32 +7,33 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #BFEAF5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-}
 
-.container{
-    background: linear-gradient(to right, #fff 50%, #D8E8FF 50%);
-    border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    position: relative;
+    body {
+        background: linear-gradient(to top, #1363DF, #72ceed);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+
+.container {
+    background: linear-gradient(to top, #1363DF, #72ceed);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.65);
+    position: absolute;
     overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
+    width: 28%;
+    min-height: 595px;
+    padding: 20px;
+    right: 15%;
+   
 }
-
 .container p{
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
-    margin: 20px 0;
+    margin: 20px ;
 }
 
 .container span{
@@ -40,7 +41,7 @@ body{
 }
 
 .container button{
-    background-color: #8FB7EF;
+    background-color: #88a0c2;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -54,19 +55,22 @@ body{
 }
 
 .container2 .pestañas{
-    background-color: #8FB7EF;
-    border-color: rgb(0, 6, 68);
-    border-radius: 30px;
+    background: linear-gradient(to right, #68b8d0, #15addf);
+    box-shadow: 0 5px 15px rgba(38, 4, 71, 0.3);
+    border-radius: 40px;
+    align-items: center;
 }
 
 .container form{
-    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 60px;
     height: 100%;
+    position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%);
+    justify-content: center; /* Centra horizontalmente */
+    
 }
 
 .form-container{
@@ -74,6 +78,7 @@ body{
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
+    
 }
 
 .conectarme{
@@ -82,13 +87,14 @@ body{
     z-index: 2;
 }
 
-.buttons {
+.button {
   min-width: 350px;
   display: flex;
   justify-content: space-around;
+  right: 40px;
 }
 
-.buttons a {
+.button a {
   text-decoration: none;
   font-size: 28px;
   width: 60px;
@@ -98,26 +104,27 @@ body{
   background: #3679a0;
   color: #f1f1f1;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 45);
   transition: all .4s ease-in-out;
+  
+ 
 }
 
-.buttons a:hover {
+.button a:hover {
     transform: scale(1.2);
   }
 
 .Inicio{
     position: absolute;
-    width: 50%;
-    height: 100%;
+    width: 5%;
+    height: 130%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 30px;
+    padding: 30px;
     text-align: center;
-    top: 0;
-    transform: translateX(0);
+    top: 0;   
     transition: all 0.6s ease-in-out;
 }
 
@@ -127,11 +134,13 @@ body{
 }
 
 img{
-    width: 100%;
+    width: 200%;
+    margin-left: 50px; 
+    margin-bottom: 10px; /* Espacio debajo de la imagen */  
 }
 
 .pestañas{
-    background-color: #8FB7EF;
+    background: #3fa0d0;
     border-color: rgb(0, 6, 68);
 }
 
@@ -139,17 +148,39 @@ img{
     display: flex;
     align-items: center;
     margin-top: 10px;
+    
+}
+
+h2{
+    color: #fff;
+    position: absolute;
+    bottom: 80%;
+    left: 98px;
+    width: 80%;
+    font-size: 2em; 
+    font-weight: 300; 
+}
+
+h2::before,
+h2::after {
+    content: '';
+    display: block;
+    width: 10%;
+    height: 1px; /* Grosor de la línea */
+    background-color: #fff;
+    margin: 10px ; 
 }
 
 .checkbox {
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     margin-right: 10px;
     cursor: pointer;
     border: 2px solid #555;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%; 
 }
 
 .checkbox.checked {
@@ -161,3 +192,66 @@ img{
     color: white;
 }
 
+h1{
+    color: #032257;
+    font-size: 14px;
+
+}
+
+.cloud {
+    display: flex;
+    justify-content: center;
+    background-color: #fff; /* Color de fondo */
+    padding: 30px; /* Espacio interior */
+    border-radius: 20px; /* Bordes redondeados */
+    display: inline-block; /* Para que el tamaño se ajuste al contenido */
+    width: 200px;
+    margin-left: 60px;
+    
+}
+p{
+    color: #fff;
+    white-space: nowrap;
+}
+
+.mancha {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #fff; /* Color de la mancha */
+    border-radius: 50%; /* Forma redondeada */
+    z-index: -1; 
+    box-shadow:
+        60px -130px 0 10px #fff,
+        70px 50px 0 30px #fff,
+        -10px 10px 0 10px #fff,
+        60px -130px 0 10px #fff;
+}
+
+#pybot_com {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 30%;
+}
+
+#logobot {
+    position: absolute;
+    right: -120px;
+    width: 130px;
+    animation: jump 1s infinite;
+    animation-delay: 0.2s;
+}
+@keyframes jump {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
