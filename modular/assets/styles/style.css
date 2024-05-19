@@ -8,39 +8,49 @@
 }
 
 
-    body {
-        background: linear-gradient(to top, #1363DF, #72ceed);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 100vh;
-    }
-
+body {
+    background: linear-gradient(to top, #1363DF, #72ceed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0; /* Asegura que no haya márgenes adicionales */
+}
 
 .container {
     background: linear-gradient(to top, #1363DF, #72ceed);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.65);
-    position: absolute;
+    position: relative;
     overflow: hidden;
     width: 28%;
     min-height: 595px;
     padding: 20px;
-    right: 15%;
-   
+    margin: 20px; /* Añadir margen para separar del borde */
+    transform: translateX(0); /* Resetear cualquier transformación */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.container p{
+
+.container img {
+    width: 50%; /* Ajustar el tamaño de la imagen */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+.container p {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
-    margin: 20px ;
+    margin: 20px;
+    text-align: center; /* Centrar texto */
 }
 
-.container span{
+.container span {
     font-size: 12px;
 }
 
-.container button{
+.container button {
     background-color: #88a0c2;
     color: #fff;
     font-size: 12px;
@@ -52,94 +62,87 @@
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
-.container2 .pestañas{
+.container2 .pestañas {
     background: linear-gradient(to right, #68b8d0, #15addf);
     box-shadow: 0 5px 15px rgba(38, 4, 71, 0.3);
     border-radius: 40px;
     align-items: center;
 }
 
-.container form{
+.container form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 60px;
     height: 100%;
-    position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%);
-    justify-content: center; /* Centra horizontalmente */
-    
+    position: relative; /* Cambiado de absolute a relative */
+    transform: none; /* Remover la transformación */
 }
 
-.form-container{
-    position: absolute;
+.form-container {
+    position: relative; /* Cambiado de absolute a relative */
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
-    
 }
 
-.conectarme{
+.conectarme {
     left: 0;
-    width: 50%;
+    width: 100%; /* Cambiado a 100% */
     z-index: 2;
 }
 
 .button {
-  min-width: 350px;
-  display: flex;
-  justify-content: space-around;
-  right: 40px;
+    min-width: 350px;
+    display: flex;
+    justify-content: space-around;
+    right: 40px;
 }
 
 .button a {
-  text-decoration: none;
-  font-size: 28px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  background: #3679a0;
-  color: #f1f1f1;
-  border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 45);
-  transition: all .4s ease-in-out;
-  
- 
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #3679a0;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 45);
+    transition: all .4s ease-in-out;
 }
 
 .button a:hover {
     transform: scale(1.2);
-  }
+}
 
-.Inicio{
-    position: absolute;
-    width: 5%;
-    height: 130%;
+.Inicio {
+    position: relative; /* Cambiado de absolute a relative */
+    width: auto; /* Ajustar ancho automáticamente */
+    height: auto; /* Ajustar altura automáticamente */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 30px;
     text-align: center;
-    top: 0;   
+    top: 0; /* Remover top */
     transition: all 0.6s ease-in-out;
 }
 
-.derecha{
+.derecha {
     right: 0;
     transform: translateX(0);
 }
 
-img{
-    width: 200%;
-    margin-left: 50px; 
-    margin-bottom: 10px; /* Espacio debajo de la imagen */  
-}
-
-.pestañas{
+.pestañas {
     background: #3fa0d0;
     border-color: rgb(0, 6, 68);
 }
@@ -148,17 +151,16 @@ img{
     display: flex;
     align-items: center;
     margin-top: 10px;
-    
 }
 
-h2{
+h2 {
     color: #fff;
     position: absolute;
     bottom: 80%;
     left: 98px;
     width: 80%;
-    font-size: 2em; 
-    font-weight: 300; 
+    font-size: 2em;
+    font-weight: 300;
 }
 
 h2::before,
@@ -168,7 +170,7 @@ h2::after {
     width: 10%;
     height: 1px; /* Grosor de la línea */
     background-color: #fff;
-    margin: 10px ; 
+    margin: 10px;
 }
 
 .checkbox {
@@ -180,7 +182,7 @@ h2::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 .checkbox.checked {
@@ -192,10 +194,9 @@ h2::after {
     color: white;
 }
 
-h1{
+h1 {
     color: #032257;
     font-size: 14px;
-
 }
 
 .cloud {
@@ -206,10 +207,10 @@ h1{
     border-radius: 20px; /* Bordes redondeados */
     display: inline-block; /* Para que el tamaño se ajuste al contenido */
     width: 200px;
-    margin-left: 60px;
-    
+    margin-left: 0; /* Remover margen izquierdo */
 }
-p{
+
+p {
     color: #fff;
     white-space: nowrap;
 }
@@ -222,7 +223,7 @@ p{
     height: 200px;
     background-color: #fff; /* Color de la mancha */
     border-radius: 50%; /* Forma redondeada */
-    z-index: -1; 
+    z-index: -1;
     box-shadow:
         60px -130px 0 10px #fff,
         70px 50px 0 30px #fff,
@@ -238,12 +239,12 @@ p{
 }
 
 #logobot {
-    position: absolute;
-    right: -120px;
+    position: relative; /* Cambiado de absolute a relative */
     width: 130px;
     animation: jump 1s infinite;
     animation-delay: 0.2s;
 }
+
 @keyframes jump {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -253,5 +254,39 @@ p{
     }
     60% {
         transform: translateY(-10px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h2,
+    #pybot_com,
+    .mancha {
+        display: none;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 10px;
+        width: 90%; /* Ajusta el ancho al 90% */
+        min-height: auto; /* Ajusta la altura mínima */
+        margin: 0 auto; /* Centrar horizontalmente */
+        right: 0;
+    }
+
+    .Inicio {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .cloud {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container button {
+        width: 100%;
+        padding: 10px;
     }
 }
