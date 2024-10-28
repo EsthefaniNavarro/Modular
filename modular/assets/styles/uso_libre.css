@@ -39,7 +39,8 @@ header img {
     display: flex;
     height: calc(100vh - 80px); 
     justify-content: center; 
-    align-items: center; 
+    align-items: center;
+     
 }
 
 .control-container {
@@ -50,6 +51,7 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .control-container img {
@@ -253,23 +255,15 @@ a.selected {
         left: -80px;
     }
 
-    /* Ocultar todos los elementos excepto el control con las flechas */
-    header, footer, .navigation-section {
-        display: none;
-    }
 
     .container {
         height: 100vh; /*Ocupa toda la altura de la pantalla*/
     }
 
-    .control-container {
-        width: 75vw; 
-        height: auto;
-    }
-
+  
     .arriba, .abajo, .izquierda, .derecha {
-        width: 30px; 
-        height: 30px; 
+        width: 60px; 
+        height: 60px; 
     }
 
     .caja {
@@ -277,3 +271,13 @@ a.selected {
     }
 }
 
+/*caja en lugar de control*/
+.rectangulo-azul {
+    width: 900px;  /* O utiliza una unidad relativa como 100vw */
+    height: 500px;
+    background-color: #E5F5F5; /* Color azul claro */
+    margin: 10px auto; /* Centrado */
+    border: 10px solid #8FB7EF; /* Margen rojo alrededor del rectángulo */
+    max-width: none; /* Eliminar restricciones de ancho */
+   
+}

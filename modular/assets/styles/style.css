@@ -15,7 +15,7 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    margin: 0; /* Asegura que no haya márgenes adicionales */
+    margin: 0; 
 }
 
 .container {
@@ -26,16 +26,16 @@ body {
     width: 28%;
     min-height: 595px;
     padding: 20px;
-    margin: 20px; /* Añadir margen para separar del borde */
-    transform: translateX(0); /* Resetear cualquier transformación */
+    margin: 20px; 
+    transform: translateX(0); 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .container img {
-    width: 50%; /* Ajustar el tamaño de la imagen */
-    margin-bottom: 10px; /* Espacio debajo de la imagen */
+    width: 50%; 
+    margin-bottom: 10px; 
 }
 
 .container p {
@@ -81,12 +81,12 @@ body {
     flex-direction: column;
     padding: 60px;
     height: 100%;
-    position: relative; /* Cambiado de absolute a relative */
-    transform: none; /* Remover la transformación */
+    position: relative; 
+    transform: none;
 }
 
 .form-container {
-    position: relative; /* Cambiado de absolute a relative */
+    position: relative; 
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
@@ -124,9 +124,9 @@ body {
 }
 
 .Inicio {
-    position: relative; /* Cambiado de absolute a relative */
-    width: auto; /* Ajustar ancho automáticamente */
-    height: auto; /* Ajustar altura automáticamente */
+    position: relative; 
+    width: auto; 
+    height: auto; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,7 +168,7 @@ h2::after {
     content: '';
     display: block;
     width: 10%;
-    height: 1px; /* Grosor de la línea */
+    height: 1px; 
     background-color: #fff;
     margin: 10px;
 }
@@ -202,12 +202,12 @@ h1 {
 .cloud {
     display: flex;
     justify-content: center;
-    background-color: #fff; /* Color de fondo */
-    padding: 30px; /* Espacio interior */
-    border-radius: 20px; /* Bordes redondeados */
-    display: inline-block; /* Para que el tamaño se ajuste al contenido */
+    background-color: #fff; 
+    padding: 30px; 
+    border-radius: 20px; 
+    display: inline-block; 
     width: 200px;
-    margin-left: 0; /* Remover margen izquierdo */
+    margin-left: 0; 
 }
 
 p {
@@ -221,8 +221,8 @@ p {
     right: 0;
     width: 200px;
     height: 200px;
-    background-color: #fff; /* Color de la mancha */
-    border-radius: 50%; /* Forma redondeada */
+    background-color: #fff; 
+    border-radius: 50%; 
     z-index: -1;
     box-shadow:
         60px -130px 0 10px #fff,
@@ -239,7 +239,7 @@ p {
 }
 
 #logobot {
-    position: relative; /* Cambiado de absolute a relative */
+    position: relative; 
     width: 130px;
     animation: jump 1s infinite;
     animation-delay: 0.2s;
@@ -268,9 +268,9 @@ p {
     .container {
         box-shadow: none;
         padding: 10px;
-        width: 90%; /* Ajusta el ancho al 90% */
-        min-height: auto; /* Ajusta la altura mínima */
-        margin: 0 auto; /* Centrar horizontalmente */
+        width: 90%; 
+        min-height: auto; 
+        margin: 0 auto; 
         right: 0;
     }
 
@@ -289,4 +289,30 @@ p {
         width: 100%;
         padding: 10px;
     }
+}
+
+
+/*---------------------------ESQUIVACIÓN DE OBSTACULOS----------------------------------*/
+h3{
+    color: #fff;
+}
+
+#obstaculos {
+    position: relative;
+    width: 480px;
+    margin-left: 25%; 
+}
+
+
+.robot-description {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 1.5; 
+    padding: 10px; 
+    width: 90%; 
+    max-width: 300px;
+    overflow-wrap: break-word;
+    overflow: visible; 
 }

@@ -1,0 +1,123 @@
+/* Degradado de fondo */
+body {
+    background: linear-gradient(135deg, #1363DF, #64b6ec);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Centrado del logo y el título */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#logobot {
+    max-width: 80px; 
+    position: absolute;
+    left: -160px; 
+    top: 50%; 
+    transform: translateY(-210%); 
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: rgb(240, 244, 244);
+    transform: translateY(-220%); 
+}
+
+/* Contenedor del carrusel */
+.rotator {
+    width:480px;
+    height: 190px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor interior del carrusel */
+.rotator-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+
+/* Estilos de los rectángulos */
+.rectangulo {
+    width: 150px;
+    height: 200px;
+    background-color: rgba(192, 192, 192, 0.7);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative; /* se posicionen correctamente */
+    z-index: 2; 
+}
+
+/* Imagen sobre el rectángulo */
+.rectangulo-img {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: -40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; 
+}
+
+/* Imagen sobre el rectángulo 2 */
+.rectangulo-imge {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: -40px;
+    left: 85%;
+    transform: translateX(-50%);
+    z-index: 2; 
+}
+
+/* Imagen sobre el rectángulo 3*/
+.rectangulo-imgen {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: -40px; 
+    left: 17%;
+    transform: translateX(-50%);
+    z-index: 2; 
+}
+
+/* Efecto de hover en el rectángulo */
+.rectangulo:hover {
+    background-color: rgba(240, 244, 247, 0.9);
+    transform: scale(1.6);
+    z-index: 3; 
+}
+
+
+/* Transición automática para los rectángulos */
+@keyframes rotate {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+   
+}

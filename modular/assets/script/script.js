@@ -26,7 +26,7 @@ window.addEventListener("resize", function(){
     }
 });
 
-////conectarme
+//conectarme
 function toggleCheckbox(checkbox) {
     checkbox.classList.toggle('checked');
 }
@@ -40,3 +40,22 @@ function conectar() {
         alert('Por favor, acepta los términos y condiciones.');
     }
 }
+
+//-----------------------------------------CARRUSEL---------------------------------------------------
+
+ // Redirigir a la página del carrusel si la pantalla es pequeña
+ function checkScreenSize() {
+    if (window.innerWidth < 755) {
+        window.location.href = "menu_carrusel.html"; // Redirige a la página del carrusel
+    }
+}
+
+
+// También comprobar el tamaño de la pantalla cuando la ventana cambia de tamaño
+window.onresize = checkScreenSize;
+
+
+
+
+
+

@@ -35,16 +35,16 @@ header aside {
 }
 
 header img {
-    width: 50px; /* Ajusta según sea necesario */
-    margin-right: 20px; /* Espaciado entre la imagen y el texto */
+    width: 50px; 
+    margin-right: 20px; 
 }
 
 .caja {
     flex-grow: 1;
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
     max-height: 100%;
 }
 
@@ -53,7 +53,7 @@ header img {
 }
 
 .muestras img:hover{
-    transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
+    transform: scale(1.1); 
 }
 
 .muestras img{
