@@ -98,57 +98,79 @@ main{
     justify-content: center;
 }
 
-/* Ajuste de los botones de encender y apagar */
-.botones{
+/* Contenedor de botones para centralizarlos */
+.botones {
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     display: flex;
+    gap: 15px;
+    padding: 20px;
 }
 
-/* Estilos para los botones de encender y apagar */
+/* Estilos generales para ambos botones */
 .encender button,
 .apagar button {
-    padding: 10px 15px; /* Ajusta según sea necesario */
-    font-size: 16px; /* Ajusta según sea necesario */
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
     border: none;
+    border-radius: 8px; /* Bordes redondeados */
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    width: 98.5px;
-    height: 38px;
-    margin-left: 3px;
-    margin-right: 3px;
+    width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-/* Estilos específicos para el botón de encender */
+/*botón de encender */
 .encender button {
-    background-color: green;
-    color: white;
+    background-color: #28a745;
 }
 
-/* Estilos específicos para el botón de apagar */
+/*botón de apagar */
 .apagar button {
-    background-color: #ff0000;
-    color: white;
+    background-color: #be0719;
 }
 
-/* Efecto de hover para ambos botones */
-.encender button:hover{
-    background-color: #4caf50; /* Verde más oscuro para encender */
-    color: white;
-    transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
-}
+/* Efecto de hover*/
+.encender button:hover,
 .apagar button:hover {
-    background-color: #fd2c2c; /* Verde más oscuro para encender */
-    color: white;
-    transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
+    transform: translateY(-2px); /* Levanta un poco el botón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra */
 }
 
-/* Efecto de "select" al poner el mouse encima (hover) */
+/*Efecto para cuando se presiona*/
 .encender button:active,
 .apagar button:active {
-    transform: scale(0.9); /* Ajusta el factor de escala según sea necesario */
+    transform: translateY(1px); 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
 }
+
+/* Efecto gradiente*/
+.encender button {
+    background: linear-gradient(45deg, #28a745, #45b363);
+}
+.apagar button {
+    background: linear-gradient(45deg, #dc3545, #e71919);
+}
+
+/*borde brilloso */
+.encender button,
+.apagar button {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Efecto de animación*/
+.encender button,
+.apagar button {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 
 
 /*Ocultar scroll*/

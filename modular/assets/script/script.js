@@ -35,7 +35,7 @@ function conectar() {
     const aceptoCheckbox = document.querySelector('.checkbox');
     if (aceptoCheckbox.classList.contains('checked')) {
         // Realiza la conexión aquí
-        window.location.href = 'uso_libre.html';
+        window.location.href = 'menu_carrusel.html';
     } else {
         alert('Por favor, acepta los términos y condiciones.');
     }
@@ -53,6 +53,9 @@ function conectar() {
 
 // También comprobar el tamaño de la pantalla cuando la ventana cambia de tamaño
 window.onresize = checkScreenSize;
+
+
+
 
 
 
