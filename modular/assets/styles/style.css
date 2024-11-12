@@ -316,3 +316,26 @@ h3{
     overflow-wrap: break-word;
     overflow: visible; 
 }
+
+
+/* Boton de ir hacia atras*/
+.btn-mini-programas {
+    background-color: #41C9E2; 
+    color: white; /* Color del texto */
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: center;
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.btn-mini-programas:hover {
+    background-color: #538fa7; /*Color al pasar la flecha */
+}
+
+.btn-mini-programas:active {
+    background-color: #7b88da; /* Color de fondo al hacer clic */
+}
+
