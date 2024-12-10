@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    background: linear-gradient(to top, #1363DF, #72ceed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0; 
+}
+
+.container {
+    background: linear-gradient(to top, #1363DF, #72ceed);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.65);
+    position: relative;
+    overflow: hidden;
+    width: 28%;
+    min-height: 595px;
+    padding: 20px;
+    margin: 20px; 
+    transform: translateX(0); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container img {
+    width: 50%; 
+    margin-bottom: 10px; 
+}
+
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px;
+    text-align: center; /* Centrar texto */
+}
+
+.container span {
+    font-size: 12px;
+}
+
+.container button {
+    background-color: #88a0c2;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.container2 .pestañas {
+    background: linear-gradient(to right, #68b8d0, #15addf);
+    box-shadow: 0 5px 15px rgba(38, 4, 71, 0.3);
+    border-radius: 40px;
+    align-items: center;
+}
+
+.container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px;
+    height: 100%;
+    position: relative; 
+    transform: none;
+}
+
+.form-container {
+    position: relative; 
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.conectarme {
+    left: 0;
+    width: 100%; /* Cambiado a 100% */
+    z-index: 2;
+}
+
+.button {
+    min-width: 350px;
+    display: flex;
+    justify-content: space-around;
+    right: 40px;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #3679a0;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 45);
+    transition: all .4s ease-in-out;
+}
+
+.button a:hover {
+    transform: scale(1.2);
+}
+
+.Inicio {
+    position: relative; 
+    width: auto; 
+    height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    top: 0; /* Remover top */
+    transition: all 0.6s ease-in-out;
+}
+
+.derecha {
+    right: 0;
+    transform: translateX(0);
+}
+
+.pestañas {
+    background: #3fa0d0;
+    border-color: rgb(0, 6, 68);
+}
+
+.acepto-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 80%;
+    left: 98px;
+    width: 80%;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+h2::before,
+h2::after {
+    content: '';
+    display: block;
+    width: 10%;
+    height: 1px; 
+    background-color: #fff;
+    margin: 10px;
+}
+
+.checkbox {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.checkbox.checked {
+    background-color: green;
+    border-color: green;
+}
+
+.checkbox i {
+    color: white;
+}
+
+h1 {
+    color: #032257;
+    font-size: 14px;
+}
+
+.cloud {
+    display: flex;
+    justify-content: center;
+    background-color: #fff; 
+    padding: 30px; 
+    border-radius: 20px; 
+    display: inline-block; 
+    width: 200px;
+    margin-left: 0; 
+}
+
+p {
+    color: #fff;
+    white-space: nowrap;
+}
+
+.mancha {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #fff; 
+    border-radius: 50%; 
+    z-index: -1;
+    box-shadow:
+        60px -130px 0 10px #fff,
+        70px 50px 0 30px #fff,
+        -10px 10px 0 10px #fff,
+        60px -130px 0 10px #fff;
+}
+
+#pybot_com {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 30%;
+}
+
+#logobot {
+    position: relative; 
+    width: 130px;
+    animation: jump 1s infinite;
+    animation-delay: 0.2s;
+}
+
+@keyframes jump {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Apartado de responsividad */
+@media (max-width: 600px) {
+    h2,
+    #pybot_com,
+    .mancha {
+        display: none;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 10px;
+        width: 90%; 
+        min-height: auto; 
+        margin: 0 auto; 
+        right: 0;
+    }
+
+    .Inicio {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .cloud {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+/*---------------------------ESQUIVACIÓN DE OBSTACULOS----------------------------------*/
+h3{
+    color: #fff;
+}
+
+#obstaculos {
+    position: relative;
+    width: 480px;
+    margin-left: 25%; 
+}
+
+
+.robot-description {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 1.5; 
+    padding: 10px; 
+    width: 90%; 
+    max-width: 300px;
+    overflow-wrap: break-word;
+    overflow: visible; 
+}
+
+
+/* Boton de ir hacia atras*/
+.btn-mini-programas {
+    background-color: #41C9E2; 
+    color: white; /* Color del texto */
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: center;
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.btn-mini-programas:hover {
+    background-color: #538fa7; /*Color al pasar la flecha */
+}
+
+.btn-mini-programas:active {
+    background-color: #7b88da; /* Color de fondo al hacer clic */
+}
+
